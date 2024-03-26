@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.first_section {
+  background-image: url(./Images/first.jpg);
+  min-height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.first_text,
+.second_text,
+.third_text,
+.forth_text,
+.fifth_text {
+  color: bisque;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 10px 50px;
+  backdrop-filter: blur(5px);
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about_section {
+  color: rgb(93, 92, 92);
+  text-align: center;
+  padding: 20px 30px;
+  letter-spacing: 1px;
+  background-color: rgba(252, 211, 162, 0.932);
+}
+.about_section h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-bottom: 15px;
+}
+.second_section {
+  background-image: url(./Images/Dogs.jpg);
+  min-height: 60%;
+}
+.third_section {
+  background-image: url(./Images/birds.jpg);
+  min-height: 60%;
+}
+.forth_section {
+  background-image: url(./Images/mountains.jpg);
+  min-height: 60%;
+}
+.fifth_section {
+  background-image: url(./Images/happy\ family.jpg);
+  min-height: 100%;
+}
+.second_section,
+.third_section,
+.forth_section,
+.fifth_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.fifth_text_quote{
+    color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 10px 50px;
+  backdrop-filter: blur(5px);
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 460px) {
+  .first_section > span{
+    font-size: 30px;
+  }
+}
